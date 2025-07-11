@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><b>CALCULATOR</b></h1>
+        <div class="calculator">
+
+        <!-- <input type="text" id="screen"> -->
+         <!-- <h1 id="output"></h1> -->
+             <input type="text" id="display" disabled />
+
+        <table>
+            <tr>
+                <td><button style="font-size:28px;background-color: rgba(255, 174, 0, 0.863);" onclick="ac()">AC</button></td>
+                <td><button style="font-size:28px;background-color: rgba(255, 174, 0, 0.863);" onclick="deleteLastCharacter()">DEL</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);"3 onclick="show('%')">%</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);" onclick="show('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color:white;"  onclick="show(7)">7</button></td>
+                <td><button  style="background-color:white;" onclick="show(8)">8</button></td>
+                <td><button  style="background-color:white;" onclick="show(9)">9</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);" onclick="show('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button  style="background-color:white;" onclick="show(4)">4</button></td>
+                <td><button  style="background-color:white;" onclick="show(5)">5</button></td>
+                <td><button  style="background-color:white;" onclick="show('6')">6</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);" onclick="show('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button  style="background-color:white" onclick="show('1')">1</button></td>
+                <td><button  style="background-color:white;" onclick="show('2')">2</button></td>
+                <td><button  style="background-color:white;" onclick="show('3')">3</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);" onclick="show('/')">/</button></td>
+            </tr>
+             <tr>
+                <td><button  style="background-color:white;" onclick="show('0')">0</button></td>
+                <td><button  style="background-color:white;" onclick="show('00')">00</button></td>
+                <td><button style="background-color:white;" onclick="show('.')">.</button></td>
+                <td><button style="background-color: rgba(255, 174, 0, 0.863);" onclick="calculateResult()">=</button></td>
+            </tr>
+             <tr>
+                <td colspan="4" class="td_last">Developed By Muhammad Anus </td>
+            </tr>
+
+        </table>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
